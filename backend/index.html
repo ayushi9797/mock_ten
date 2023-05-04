@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      img {
+        height: 25%;
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="chat__section">
+      <div class="brand">
+        <img
+          src="https://gbfunda.com/media/2023/04/_2/800x600/blue-whatsapp-logo_dc29c.png"
+          alt="blue whatapp"
+        />
+        <h1>Chit-chat</h1>
+      </div>
+      <!-- MESAAGE AREA -->
+      <div class="message__area">
+        <!-- insert message here -->
+      </div>
+
+      <!--  TEXT AREA -->
+
+      <div>
+        <textarea
+          id="textarea"
+          cols="30"
+          rows="1"
+          placeholder="send your message....."
+        ></textarea>
+      </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
